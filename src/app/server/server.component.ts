@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'offline';
+  serverName = '';
 
   getServiceStatus() {
     return this.serverStatus;
+  }
+  onUpdateServerName(event: any){
+    this.serverName = (<HTMLInputElement> event.target).value;
   }
 }
