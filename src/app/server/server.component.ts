@@ -8,12 +8,14 @@ import { Component } from '@angular/core';
 export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'offline';
-  serverName = '';
+  serverName = 'testy';
+  serverName3 = 'trying';
 
   getServiceStatus() {
     return this.serverStatus;
   }
-  onUpdateServerName(event: any){
-    this.serverName = (<HTMLInputElement> event.target).value;
+
+  CreatingServer() {
+    this.serverName3 = 'Server was created! Server is named: ' +  this.serverName;
   }
 }
