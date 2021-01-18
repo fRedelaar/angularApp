@@ -17,5 +17,6 @@ export class ServerComponent {
 
   CreatingServer() {
     this.serverName3 = 'Server was created! Server is named: ' +  this.serverName;
+    this.serverName = '';
   }
 }
