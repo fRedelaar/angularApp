@@ -5,7 +5,8 @@
 
 
 
-<h1> Server Id: {{serverId}} status: {{getServiceStatus()}}</h1>
+<h1   [ngStyle]="{backgroundColor: getColor()}"
+      [ngClass]="{online: serverStatus === 'online'}"> Server Id: {{serverId}} status: {{getServiceStatus()}}</h1>
 <p> {{serverName3}} </p>
 
 <button type="button" class="btn btn-primary" (click)="CreatingServer()" [disabled]="serverName === ''">Create Server!</button>
